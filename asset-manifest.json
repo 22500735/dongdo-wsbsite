@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/dongdo-wsbsite/static/css/main.52be476c.css",
-    "main.js": "/dongdo-wsbsite/static/js/main.91e11c9a.js",
+    "main.css": "/dongdo-wsbsite/static/css/main.4960d37a.css",
+    "main.js": "/dongdo-wsbsite/static/js/main.7e4337a4.js",
     "index.html": "/dongdo-wsbsite/index.html",
-    "main.52be476c.css.map": "/dongdo-wsbsite/static/css/main.52be476c.css.map",
-    "main.91e11c9a.js.map": "/dongdo-wsbsite/static/js/main.91e11c9a.js.map"
+    "main.4960d37a.css.map": "/dongdo-wsbsite/static/css/main.4960d37a.css.map",
+    "main.7e4337a4.js.map": "/dongdo-wsbsite/static/js/main.7e4337a4.js.map"
   },
   "entrypoints": [
-    "static/css/main.52be476c.css",
-    "static/js/main.91e11c9a.js"
+    "static/css/main.4960d37a.css",
+    "static/js/main.7e4337a4.js"
   ]
 }
