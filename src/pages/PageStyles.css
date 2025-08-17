@@ -1,0 +1,587 @@
+/* 공통 페이지 스타일 */
+.page {
+  padding-top: 80px;
+}
+
+.page-hero {
+  background: var(--gradient);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.page-hero p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* 인사말 페이지 */
+.greeting-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.pastor-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pastor-placeholder {
+  font-size: 8rem;
+  background: var(--secondary-color);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.greeting-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--text-dark);
+}
+
+.pastor-title {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.greeting-message p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-light);
+  margin-bottom: 25px;
+}
+
+.signature {
+  margin-top: 40px;
+  text-align: right;
+  font-style: italic;
+}
+
+.signature strong {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.vision-section {
+  background: var(--secondary-color);
+}
+
+.vision-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.vision-card:hover {
+  transform: translateY(-10px);
+}
+
+.vision-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.vision-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--text-dark);
+}
+
+.vision-card p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* 목회철학 페이지 */
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.philosophy-item {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid var(--primary-color);
+}
+
+.philosophy-item h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.philosophy-item p {
+  line-height: 1.8;
+  color: var(--text-light);
+}
+
+/* 연혁 페이지 */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--primary-color);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+  flex-direction: row;
+}
+
+.timeline-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.timeline-date {
+  flex: 0 0 120px;
+  background: var(--primary-color);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  margin: 0 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-content {
+  flex: 1;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h4 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: var(--text-dark);
+}
+
+.timeline-content p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* 오시는길 페이지 */
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.info-card {
+  background: var(--secondary-color);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.info-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: var(--text-dark);
+}
+
+.info-card p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.map-placeholder {
+  background: var(--secondary-color);
+  border-radius: 20px;
+  padding: 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+.map-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.map-placeholder p {
+  color: var(--text-light);
+  font-size: 1.1rem;
+}
+
+/* 예배 관련 페이지 */
+.service-schedule {
+  background: var(--secondary-color);
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.service-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-item:last-child {
+  margin-bottom: 0;
+}
+
+.service-time {
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.service-name {
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.service-location {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+/* 설교 페이지 */
+.sermon-list {
+  display: grid;
+  gap: 30px;
+}
+
+.sermon-item {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.sermon-item:hover {
+  transform: translateY(-5px);
+}
+
+.sermon-date {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.sermon-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--text-dark);
+}
+
+.sermon-verse {
+  color: var(--text-light);
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.sermon-summary {
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.sermon-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-small {
+  padding: 8px 20px;
+  font-size: 0.9rem;
+  border-radius: 20px;
+}
+
+/* 다음세대 페이지 */
+.generation-info {
+  background: var(--secondary-color);
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.generation-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.generation-info h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: var(--text-dark);
+}
+
+.generation-info p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.activity-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.activity-card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: var(--text-dark);
+}
+
+.activity-card p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* 알림 페이지 */
+.notice-list {
+  display: grid;
+  gap: 20px;
+}
+
+.notice-item {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid var(--primary-color);
+  transition: transform 0.3s ease;
+}
+
+.notice-item:hover {
+  transform: translateX(5px);
+}
+
+.notice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.notice-title {
+  font-size: 1.3rem;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.notice-date {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.notice-content {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.notice-important {
+  border-left-color: var(--accent-color);
+}
+
+.notice-important .notice-title {
+  color: var(--accent-color);
+}
+
+/* 사진 앨범 */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.photo-item {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.photo-item:hover {
+  transform: translateY(-10px);
+}
+
+.photo-placeholder {
+  height: 200px;
+  background: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  opacity: 0.5;
+}
+
+.photo-info {
+  padding: 20px;
+}
+
+.photo-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--text-dark);
+}
+
+.photo-date {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+  .page-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .greeting-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .pastor-placeholder {
+    width: 150px;
+    height: 150px;
+    font-size: 6rem;
+  }
+
+  .philosophy-grid {
+    gap: 30px;
+  }
+
+  .philosophy-item {
+    padding: 30px 20px;
+  }
+
+  .timeline::before {
+    left: 30px;
+  }
+
+  .timeline-item {
+    flex-direction: row !important;
+    margin-left: 60px;
+  }
+
+  .timeline-date {
+    flex: 0 0 100px;
+    margin: 0 20px 0 0;
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .timeline-content {
+    padding: 20px;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .info-card {
+    padding: 20px;
+  }
+
+  .map-placeholder {
+    padding: 40px 20px;
+    min-height: 200px;
+  }
+
+  .service-item {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .sermon-actions {
+    justify-content: center;
+  }
+
+  .activity-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .notice-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .photo-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+}
